@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu__icon {
+    display: block;
+    height: 1px;
+    
+    width: 30px;
+    padding: 15px 0;
+  }
+  .products {
+    grid-template-columns: minmax(285px, 320px);
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .product__img {
+    width: 100%;
+    max-height: none;
+    object-fit: contain;
+  }
+}

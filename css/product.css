@@ -1,0 +1,36 @@
+.product__img {
+  max-width: 100%;
+  min-height: 18rem;
+  object-fit: cover;
+  object-position: center;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid #c4c4c4;
+  transition: box-shadow 0.3s ease-out;
+}
+
+.product__date {
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: #6a6a6a;
+}
+
+.product__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.product__btn {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #919191;
+  cursor: pointer;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.6rem 2rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  width: 100%;
+}
