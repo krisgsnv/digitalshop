@@ -3,9 +3,6 @@
   min-height: 18rem;
   object-fit: cover;
   object-position: center;
-  padding: 1.5rem 2.5rem;
-  border: 1px solid #c4c4c4;
-  transition: box-shadow 0.3s ease-out;
 }
 
 .product__date {

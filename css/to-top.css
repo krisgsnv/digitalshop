@@ -1,0 +1,34 @@
+.to-top {
+  position: fixed;
+  border: 2px solid #8c8c8c;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
+  width: 47px;
+  height: 40px;
+  background-color: white;
+}
+
+.to-top::after,
+.to-top::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  width: 20px;
+  height: 2px;
+  background-color: #8c8c8c;
+}
+
+.to-top::after {
+  right: 5px;
+  transform: rotate(45deg);
+}
+
+.to-top::before {
+  left: 5px;
+  transform: rotate(135deg);
+}
+
+.to-top_hide {
+  display: none;
+}

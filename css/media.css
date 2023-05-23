@@ -17,7 +17,7 @@
   .menu__icon {
     display: block;
     height: 1px;
-    
+
     width: 30px;
     padding: 15px 0;
   }
@@ -31,5 +31,108 @@
     width: 100%;
     max-height: none;
     object-fit: contain;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    background: transparent;
+    border: 0;
+  }
+
+  .burger__line,
+  .burger__line::before,
+  .burger__line::after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #8c8c8c;
+    outline: 1px solid transparent;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
+  }
+
+  .burger__line {
+    user-select: none;
+    position: relative;
+  }
+
+  .burger__line::before {
+    top: -9px;
+  }
+  .burger__line::before,
+  .burger__line::after {
+    position: absolute;
+    content: '';
+  }
+
+  .burger__line::after {
+    top: 9px;
+  }
+  .burger__line_active {
+    background-color: transparent;
+  }
+
+  .burger__line_active:before,
+  .burger__line_active:after {
+    background-color: #8c8c8c;
+  }
+
+  .burger__line_active::before {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .burger__line_active::after {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .site-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: blue;
+    opacity: 0;
+    visibility: hidden;
+    appearance: none;
+    border: 0;
+  }
+
+  .site-overlay_visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-menu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: -100vw;
+    padding: 8rem 5rem;
+    transition: right 0.4s ease-in-out;
+    background-color: white;
+    border-left: #8c8c8c;
+  } 
+
+  .header-menu_active {
+    right: 0;
+  }
+
+  .header-menu__list {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+
+  .header-menu__link {
+    text-transform: uppercase;
+    font-size: 1.3rem;
   }
 }

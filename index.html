@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/toTop.js"></script>
+    <script defer src="./js/mobileMenu.js"></script>
+    <script defer src="./js/script.js"></script>
+
     <title>DIGDES</title>
   </head>
   <body>
@@ -12,14 +16,18 @@
       <div class="container">
         <div class="header__inner">
           <span class="logo">DIGDES SHOP</span>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li><a class="menu__link" href="#dresses">Платья</a></li>
-              <li><a class="menu__link" href="#jackets">Пиджаки</a></li>
-              <li><a class="menu__link" href="#shirts">Рубашки</a></li>
-              <li><a class="menu__link" href="#skirts">Юбки</a></li>
+          <nav class="header-menu">
+            <ul class="header-menu__list">
+              <li><a class="header-menu__link" href="#dresses">Платья</a></li>
+              <li><a class="header-menu__link" href="#jackets">Пиджаки</a></li>
+              <li><a class="header-menu__link" href="#shirts">Рубашки</a></li>
+              <li><a class="header-menu__link" href="#skirts">Юбки</a></li>
             </ul>
           </nav>
+          <button class="burger">
+            <span class="burger__line"></span>
+          </button>         
+          <!-- <div class="site-overlay" id="js-overlay"></div> -->
         </div>
       </div>
     </header>
@@ -78,5 +86,6 @@
         </section>
       </div>
     </main>
+    <div class="to-top to-top_hide"></div>
   </body>
 </html>
