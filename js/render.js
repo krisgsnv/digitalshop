@@ -2,6 +2,31 @@ const root = document.getElementById('root');
 
 const products = [
   {
+    categoryName: 'Платья',
+    categoryId: 'dresses',
+    items: [
+      {
+        id: 1,
+        title: 'Юбка',
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg',
+        date: '23.05.2023',
+      },
+      {
+        id: 2,
+        title: 'Юбка',
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg',
+        date: '15.12.2021',
+      },
+      {
+        id: 3,
+        title: 'Юбка',
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg',
+        date: '7.05.2023',
+      },
+    ],
+  },
+
+  {
     categoryName: 'Юбки',
     categoryId: 'skirts',
     items: [

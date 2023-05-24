@@ -1,18 +1,32 @@
-const mobileMenu = {
-  el: document.querySelector('.burger'),
+const mobileMenuToggleActive = () => {
+  const burger = document.querySelector('.burger');
+  const burgerLine = document.querySelector('.burger__line');
+  const headerMenu = document.querySelector('.header-menu');
 
-  addListener() {
-    this.el.addEventListener('click', () => {
-      this.el.classList.toggle('burger_active');
-      document.querySelector('.burger__line').classList.toggle('burger__line_active');
-      document.querySelector('.header-menu').classList.toggle('header-menu_active');
-      document.body.classList.toggle('no-scroll');
+  burger.classList.toggle('burger_active');
+  burgerLine.classList.toggle('burger__line_active');
+  headerMenu.classList.toggle('header-menu_active');
+  document.body.classList.toggle('no-scroll');
 
-      if (this.el.classList.contains('burger_active')) {
-        this.el.setAttribute('title', 'Закрыть меню');
-      }
-    });
-  },
+  if (burger.classList.contains('burger_active')) {
+    burger.setAttribute('title', 'Закрыть меню');
+  }
 };
 
-mobileMenu.addListener();
+const mobileMenuHandler = (e) => {
+  const el = e.target;
+
+  if (el.classList.contains('burger')) {
+    mobileMenuToggleActive();
+  }
+
+  else if (el.classList.contains('header-menu__link')) {
+    e.preventDefault();
+    scrollToElem(el);
+    if (window.innerWidth <= 576) {
+      mobileMenuToggleActive();
+    }
+  }
+};
+
+document.body.addEventListener('click', mobileMenuHandler);
