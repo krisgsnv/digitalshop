@@ -1,0 +1,17 @@
+.footer {
+  padding: 2rem;
+  margin-top: 3rem;
+  background-color: #454545;
+}
+
+.footer-menu__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: #7c7c7c;
+}

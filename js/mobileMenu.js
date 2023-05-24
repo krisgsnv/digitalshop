@@ -10,9 +10,7 @@ const mobileMenuToggleActive = () => {
 
   if (burger.classList.contains('burger_active')) {
     burger.setAttribute('title', 'Закрыть меню');
-  }
-  
-  else {
+  } else {
     burger.setAttribute('title', 'Открыть меню');
   }
 };
@@ -24,12 +22,17 @@ const mobileMenuHandler = (e) => {
     mobileMenuToggleActive();
   }
 
-  else if (el.classList.contains('header-menu__link')) {
+  if (el.classList.contains('header-menu__link')) {
     e.preventDefault();
     scrollToElem(el);
     if (window.innerWidth <= 576) {
       mobileMenuToggleActive();
     }
+  }
+
+  if (el.classList.contains('footer-menu__link')) {
+    e.preventDefault();
+    scrollToElem(el);
   }
 };
 

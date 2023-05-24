@@ -1,0 +1,34 @@
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: left 1s ease-in-out;
+}
+
+.preloader_hide {
+  left: -100vw;
+}
+
+.preloader__spinner {
+  width: 80px;
+  height: 80px;
+  border: 7px solid #c7c7c7;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

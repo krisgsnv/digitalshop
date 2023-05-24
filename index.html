@@ -11,10 +11,13 @@
     <script defer src="./js/modal.js"></script>
     <script defer src="./js/scroll.js"></script>
     <script defer src="./js/mobileMenu.js"></script>
-
+    <script defer src="./js/themeSwitch.js"></script>
     <title>DIGDES</title>
   </head>
   <body>
+    <div class="preloader">
+      <div class="preloader__spinner"></div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -27,6 +30,9 @@
               <li><a class="header-menu__link" href="#skirts">Юбки</a></li>
             </ul>
           </nav>
+          <div class="theme-switch">
+            <span class="theme-switch__slider"></span>
+          </div>
           <button type="button" title="Открыть меню" class="burger">
             <span class="burger__line"></span>
           </button>
@@ -37,20 +43,18 @@
       <div class="container" id="root"></div>
     </main>
     <div class="to-top to-top_hide"></div>
-    <div class="modal-overlay modal-overlay_active">
-      <div class="modal modal_active">
+    <div class="modal-overlay">
+      <div class="modal">
         <span class="modal__title">Оформить заказ</span>
         <form class="modal-form" action="">
           <img
             class="modal-form__product-img"
             src="https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg"
-            alt="" />
+            alt="Юбка летняя" />
           <div class="modal-form__inputs">
-            <h3 class="modal-form__product-title">Юбка летняя</h3>
-            <span class="modal-form__subtitle">Цвет:</span>
-            <label class="modal-form__label"><input type="radio" name="color" />Зеленый</label>
-            <label class="modal-form__label"><input type="radio" name="color" />Черный</label>
-            <label class="modal-form__label"><input type="radio" name="color" />Красный</label>
+            <h3 class="modal-form__product-title"></h3>
+            <span class="modal-form__subtitle" id="colors">Цвет:</span>
+            <div class="modal-form__colors"></div>
             <label class="modal-form__label"
               ><span class="modal-form__subtitle">Комментарий: </span
               ><textarea
@@ -60,12 +64,22 @@
                 maxlength="2000"></textarea>
             </label>
             <div class="modal-form__btns">
-              <button class="modal-form__btn" type="submit">Купить</button>
-              <button class="modal-form__btn" type="button">Закрыть</button>
+              <button class="modal-form__btn modal-form__submit" type="submit">Купить</button>
+              <button class="modal-form__btn modal-form__reset" type="reset">Закрыть</button>
             </div>
           </div>
         </form>
       </div>
     </div>
+    <footer class="footer">
+      <nav>
+        <ul class="footer-menu__list">
+          <li><a class="footer-menu__link" href="#dresses">Платья</a></li>
+          <li><a class="footer-menu__link" href="#jackets">Пиджаки</a></li>
+          <li><a class="footer-menu__link" href="#shirts">Рубашки</a></li>
+          <li><a class="footer-menu__link" href="#skirts">Юбки</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
