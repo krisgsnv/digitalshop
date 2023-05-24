@@ -23,6 +23,12 @@ const products = [
         img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg',
         date: '7.05.2023',
       },
+      {
+        id: 4,
+        title: 'Юбка',
+        img: 'https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg',
+        date: '7.05.2023',
+      },
     ],
   },
 

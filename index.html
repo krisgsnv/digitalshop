@@ -29,7 +29,7 @@
           </nav>
           <button type="button" title="Открыть меню" class="burger">
             <span class="burger__line"></span>
-          </button>         
+          </button>
         </div>
       </div>
     </header>
@@ -37,8 +37,35 @@
       <div class="container" id="root"></div>
     </main>
     <div class="to-top to-top_hide"></div>
-    <div class="modal-overlay">
-      <div class="modal"></div>
+    <div class="modal-overlay modal-overlay_active">
+      <div class="modal modal_active">
+        <span class="modal__title">Оформить заказ</span>
+        <form class="modal-form" action="">
+          <img
+            class="modal-form__product-img"
+            src="https://a.lmcdn.ru/img600x866/M/P/MP002XW0QCIC_19271702_1_v1.jpeg"
+            alt="" />
+          <div class="modal-form__inputs">
+            <h3 class="modal-form__product-title">Юбка летняя</h3>
+            <span class="modal-form__subtitle">Цвет:</span>
+            <label class="modal-form__label"><input type="radio" name="color" />Зеленый</label>
+            <label class="modal-form__label"><input type="radio" name="color" />Черный</label>
+            <label class="modal-form__label"><input type="radio" name="color" />Красный</label>
+            <label class="modal-form__label"
+              ><span class="modal-form__subtitle">Комментарий: </span
+              ><textarea
+                class="modal-form__comment"
+                name="comment"
+                rows="3"
+                maxlength="2000"></textarea>
+            </label>
+            <div class="modal-form__btns">
+              <button class="modal-form__btn" type="submit">Купить</button>
+              <button class="modal-form__btn" type="button">Закрыть</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

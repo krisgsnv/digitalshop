@@ -11,6 +11,10 @@ const mobileMenuToggleActive = () => {
   if (burger.classList.contains('burger_active')) {
     burger.setAttribute('title', 'Закрыть меню');
   }
+  
+  else {
+    burger.setAttribute('title', 'Открыть меню');
+  }
 };
 
 const mobileMenuHandler = (e) => {

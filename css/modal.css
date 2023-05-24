@@ -1,19 +1,102 @@
-.modal-overlay {
-    display: none;
-}
-
-.modal-overlay_active {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
+.modal {
+  min-width: 550px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 5px 26px -8px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  opacity: 0;
+  padding: 2rem;
 }
 
 .modal_active {
-    width: 80%;
-    
+  opacity: 1;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.modal-overlay_active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.modal-form {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-form__product-img {
+  max-width: 130px;
+  object-fit: contain;
+}
+
+.modal-form__inputs {
+  margin-left: 1.3rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__product-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.modal-form__btns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.modal-form__btn {
+  background-color: transparent;
+  border: 1px solid #919191;
+  cursor: pointer;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 0.6rem 1.3rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+}
+
+.modal-form__comment {
+  width: 100%;
+  margin-top: 0.6rem;
+  outline: none;
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+.modal-form__label {
+  margin-top: 0.6rem;
+  display: block;
+}
+
+.modal-form__subtitle {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  display: block;
 }
