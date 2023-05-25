@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const preloader =  document.querySelector('.preloader');
   preloader.classList.add('preloader_hide');
   setTimeout(() => {
