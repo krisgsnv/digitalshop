@@ -3,7 +3,15 @@ const themeSwitchHandler = (e) => {
 
   if (el.classList.contains('theme-switch__slider')) {
     const themeSwitchSlider = document.querySelector('.theme-switch__slider');
-    themeSwitchSlider.classList.toggle('theme-switch__slider_active');
+    const themeLink = document.querySelector('#theme-link');
+
+    if (themeLink.getAttribute('href') == './css/light-theme.css') {
+      themeSwitchSlider.classList.add('theme-switch__slider_active');
+      themeLink.setAttribute('href', './css/dark-theme.css');
+    } else {
+      themeSwitchSlider.classList.remove('theme-switch__slider_active');
+      themeLink.setAttribute('href', './css/light-theme.css');
+    }
   }
 };
 

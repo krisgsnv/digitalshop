@@ -1,0 +1,45 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.to-top {
+  border: 2px solid #8c8c8c;
+  background-color: white;
+}
+
+.to-top::after,
+.to-top::before {
+  background-color: #8c8c8c;
+}
+
+.preloader {
+  background-color: white;
+}
+
+.modal {
+  background-color: white;
+}
+
+.header {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+}
+
+.header__inner {
+  background-color: white;
+}
+
+.footer {
+  background-color: #454545;
+}
+
+.footer-menu__link {
+  color: #7c7c7c;
+}
+
+@media screen and (max-width: 576px) {
+  .header-menu {
+    background-color: white;
+    border-left: #8c8c8c;
+  }
+}

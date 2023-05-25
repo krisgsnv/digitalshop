@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
   position: fixed;
   top: 0;
   left: 0;
@@ -14,6 +13,10 @@
 
 .preloader_hide {
   left: -100vw;
+}
+
+.preloader_remove {
+  display: none;
 }
 
 .preloader__spinner {

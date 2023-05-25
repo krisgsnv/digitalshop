@@ -3,6 +3,7 @@
   display: inline-block;
   width: 50px;
   height: 24px;
+  margin-left: 2rem;
 }
 
 .theme-switch__slider {
@@ -19,12 +20,12 @@
 
 .theme-switch__slider:before {
   position: absolute;
-  content: url('../img/sun.svg');
+  content: '';
   height: 18px;
   width: 18px;
   left: 4px;
   bottom: 3px;
-  background-color: white;
+  background: url('../img/sun.png') white center/69% no-repeat;
   transition: 0.4s;
   border-radius: 50%;
   display: flex;
@@ -33,10 +34,10 @@
 }
 
 .theme-switch__slider_active {
-  background-color: #2b2b2b;
+  background-color: #626262;
 }
 
 .theme-switch__slider_active:before {
   transform: translateX(24px);
-  content: url('../img/moon.svg');
+  background-image: url('../img/moon.png');
 }

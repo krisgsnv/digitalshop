@@ -18,7 +18,7 @@ const mobileMenuToggleActive = () => {
 const mobileMenuHandler = (e) => {
   const el = e.target;
 
-  if (el.classList.contains('burger')) {
+  if (el.classList.contains('burger') || el.classList.contains('burger__line')) {
     mobileMenuToggleActive();
   }
 
